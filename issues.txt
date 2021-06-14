@@ -1,0 +1,18 @@
+1. for password encryption, bcryptjs is used.
+command to install in the server:
+npm install -g node-gyp
+npm install --save bcryptjs && npm uninstall --save bcrypt
+use requite bcryptjs in the code
+
+2. 
+issues 1:
+1. Running node.js forever. I am using putty to run the script (using nodemon) but the problem is, when I close the putty terminal, the script stops
+working. The reason is, because I am running the script from the putty terminal, its actually a child process of the terminal process. What needs to be done
+is that, running the app.js script as a background daemon, so that, even when the putty terminal gets timed out or closed forcibly, the daemon will still run.
+
+To do that:
+
+npm install pm2 -g
+pm2 start app.js
+
+reference: https://stackoverflow.com/questions/4797050/how-to-run-process-as-background-and-never-die

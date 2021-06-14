@@ -1,0 +1,17 @@
+{
+  "name": "cybersafety_app",
+  "version": "1.0.0",
+  "description": "server website for android cybersafety app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "*",
+    "express": "*",
+    "mongoose": "*"
+  },
+  "author": "Rahat Ibn Rafiq",
+  "license": "ISC"
+}
